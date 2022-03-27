@@ -130,7 +130,7 @@ export default function ReviewOrder() {
                 <h6>Subtotal</h6>
               </Col>
               <Col>
-                <h6>${preTax}</h6>
+                <h6>${preTax.toFixed(2)}</h6>
               </Col>
             </Row>
             <Row className="totalRow">
@@ -147,7 +147,7 @@ export default function ReviewOrder() {
                   <h6>Gratuity</h6>
                 </Col>
                 <Col className="">
-                  <h6>${tip}</h6>
+                  <h6>${tip.toFixed(2)}</h6>
                 </Col>
               </Row>
             ) : (
